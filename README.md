@@ -56,11 +56,6 @@ The project serves as a **reference-grade LLD model for entry-level software eng
 
 ---
 
-## 🗂️ Folder Structure
-LibraryManagementSystem/ ├── Models/ │ ├── account.py # Base Account class, and Member & Librarian roles │ ├── book.py # BookItem model with status, format, and factory method │ ├── bookLending.py # BookLending and Fine management with static records │ └── testing/ │ ├── init.py │ └── test_library.py # Unit tests for checkout, fine collection, and more │ ├── utils/ │ ├── init.py │ └── constants.py # Enum definitions for BookStatus and BookFormat │ ├── .gitignore # Ignores .venv/, pycache/, and system files ├── README.md # Project documentation and overview └── main.py # (Optional) Entry point for CLI or UI extensions
----
-
-
 ---
 
 ## 🚀 How to Run Tests
