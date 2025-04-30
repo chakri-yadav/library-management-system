@@ -71,33 +71,44 @@ python -m unittest Models/testing/test_library.py
 ✅ Make sure you're using Python 3.9+
 ✅ Activate your virtual environment (.venv) if you're using one
 
-📝 Acknowledgments
-This project was independently developed by Chakravarthi Nukala as part of his Low-Level Design (LLD) and software engineering interview preparation journey.
+---
 
-Special thanks to:
+## 📝 Acknowledgments
 
-The open-source Python community for best practices in OOP and testing
+This project was independently conceptualized, designed, and developed by **Chakravarthi Nukala** as part of a focused journey to master **Low-Level Design (LLD)** concepts and demonstrate readiness for **entry-level Software Development Engineer (SDE)** roles.
 
-Python’s built-in unittest module for simplifying functional verification
+The structure and components of this Library Management System reflect practical experience, hours of hands-on learning, and a deep interest in understanding how scalable systems are built in the real world.
 
-GitHub and PyCharm for making modern software development efficient
+Special thanks to the broader developer community and tools that supported this learning process:
 
-Everyone contributing to LLD and system design knowledge online
+- 🐍 The **Python open-source community**, whose wealth of tutorials, documentation, and code samples made learning OOP and system design approachable and practical.
+- 🧪 The **`unittest` testing framework**, which provided a lightweight yet powerful foundation for writing and validating functional logic across the system.
+- 💻 **PyCharm** for offering a developer-friendly IDE experience that made it easier to stay organized, write clean code, and debug effectively.
+- 🌐 **GitHub** for hosting, version-controlling, and sharing this project — making it visible to collaborators, recruiters, and fellow learners.
+- 🧠 The countless contributors and authors of blogs, videos, GitHub repos, and system design guides whose open sharing of knowledge continues to empower self-learners worldwide.
 
-📜 License
-This project is licensed under the MIT License.
+This project is more than a coding exercise — it's a representation of **self-driven growth**, **engineering discipline**, and the mindset to build, break, and improve software with purpose.
+
+Thank you to anyone reading, reviewing, or learning from this project.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
 
 You are free to:
 
-✅ Use this project for personal or commercial purposes
-
-✅ Modify and adapt it to your needs
-
+✅ Use this project for personal or commercial purposes  
+✅ Modify and adapt it to your needs  
 ✅ Distribute it as long as the license and attribution remain intact
 
-For full legal terms, visit: MIT License
+> For full legal terms, visit: [MIT License](https://choosealicense.com/licenses/mit)
 
 Please respect third-party library licenses if you expand the project.
+
+---
+
 
 ## ℹ️ About
 
