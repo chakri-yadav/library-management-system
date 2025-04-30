@@ -73,6 +73,8 @@ cd library-management-system
 
 python -m unittest Models/testing/test_library.py
 
+```
+
 ✅ Make sure you're using Python 3.9+
 ✅ Activate your virtual environment (.venv) if you're using one
 
