@@ -57,4 +57,20 @@ The project serves as a **reference-grade LLD model for entry-level software eng
 ---
 
 ## 🗂️ Folder Structure
+LibraryManagementSystem/ ├── Models/ │ ├── account.py # Base class Account + Member + Librarian │ ├── book.py # BookItem class with attributes and factory │ ├── bookLending.py # Lending logic + Fine class with static records │ └── testing/ │ ├── init.py │ └── test_library.py # Unit tests for checkout, fine, etc. ├── utils/ │ ├── init.py │ └── constants.py # Enums: BookStatus, BookFormat ├── .gitignore # Ignores virtual environments, pycache ├── README.md # You're reading it └── main.py # (Optional) Entry point for CLI/UI in future
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 How to Run Tests
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/chakri-yadav/library-management-system.git
+cd library-management-system
+
 
