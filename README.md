@@ -57,12 +57,7 @@ The project serves as a **reference-grade LLD model for entry-level software eng
 ---
 
 ## 🗂️ Folder Structure
-LibraryManagementSystem/ ├── Models/ │ ├── account.py # Base class Account + Member + Librarian │ ├── book.py # BookItem class with attributes and factory │ ├── bookLending.py # Lending logic + Fine class with static records │ └── testing/ │ ├── init.py │ └── test_library.py # Unit tests for checkout, fine, etc. ├── utils/ │ ├── init.py │ └── constants.py # Enums: BookStatus, BookFormat ├── .gitignore # Ignores virtual environments, pycache ├── README.md # You're reading it └── main.py # (Optional) Entry point for CLI/UI in future
-
-yaml
-Copy
-Edit
-
+LibraryManagementSystem/ ├── Models/ │ ├── account.py # Base Account class, and Member & Librarian roles │ ├── book.py # BookItem model with status, format, and factory method │ ├── bookLending.py # BookLending and Fine management with static records │ └── testing/ │ ├── init.py │ └── test_library.py # Unit tests for checkout, fine collection, and more │ ├── utils/ │ ├── init.py │ └── constants.py # Enum definitions for BookStatus and BookFormat │ ├── .gitignore # Ignores .venv/, pycache/, and system files ├── README.md # Project documentation and overview └── main.py # (Optional) Entry point for CLI or UI extensions
 ---
 
 ## 🚀 How to Run Tests
@@ -72,5 +67,48 @@ Edit
 ```bash
 git clone https://github.com/chakri-yadav/library-management-system.git
 cd library-management-system
+
+---
+
+## 📝 Acknowledgments
+
+This project was independently developed by **Chakravarthi Nukala** as part of his Low-Level Design (LLD) and software engineering interview preparation journey.
+
+Special thanks to:
+
+- The open-source Python community for best practices in OOP and testing
+- Python’s built-in `unittest` module for simplifying functional verification
+- GitHub and PyCharm for making modern software development efficient
+- Everyone contributing to LLD and system design knowledge online
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+- ✅ Use this project for personal or commercial purposes
+- ✅ Modify and adapt it to your needs
+- ✅ Distribute it as long as the license and attribution remain intact
+
+> For full legal terms, visit: [MIT License](https://choosealicense.com/licenses/mit)
+
+Please respect third-party library licenses if you expand the project.
+
+---
+
+## ℹ️ About
+
+This project is maintained by **Chakravarthi Nukala**.  
+It was created to strengthen understanding of object-oriented design and demonstrate SDE readiness.
+
+📧 Email: [chakravarthinukala@gmail.com](mailto:chakravarthinukala@gmail.com)  
+🔗 GitHub: [@chakri-yadav](https://github.com/chakri-yadav)
+
+Feel free to contribute, ask questions, or collaborate.
+
+---
+
 
 
