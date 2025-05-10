@@ -16,9 +16,9 @@ class Book(ABC):
 
 
 class BookItem(Book):
-    def __init__(self, barcode, is_reference_only, price, due_date, book_format: BookFormat, borrowed, status:BookStatus, date_of_purchase, placed_at, publication_date,
+    def __init__(self, barcode, is_reference_only,author, price, due_date, book_format: BookFormat, borrowed, status:BookStatus, date_of_purchase, placed_at, publication_date,
                  ISBN,title, subject,languages=None):
-        super().__init__(ISBN, title, subject,languages)
+        super().__init__(ISBN, title, subject,"Sample Publisher",250,languages)
         self.__barcode=barcode
         self.__is_reference_only=is_reference_only
         self.__price=price
@@ -29,6 +29,7 @@ class BookItem(Book):
         self.__date_of_purchase=date_of_purchase
         self.__placed_at=placed_at
         self.__publication_date=publication_date
+        self.author=author
     def checkout(self,member_id):
         if self.__is_reference_only:
             print("The book is only for reference purpose and can't be checked out")
@@ -57,6 +58,8 @@ class BookItem(Book):
             subject="programming",
             ISBN="123-4567890123"
         )
+    def get_status(self):
+        return self.__status
 
 
 

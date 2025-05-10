@@ -1,6 +1,6 @@
 from abc import ABC
 from datetime import datetime, timedelta
-from .bookLending import BookLending,Fine
+from Models.bookLending import BookLending,Fine
 from utils.constants import BookStatus
 
 
@@ -10,6 +10,8 @@ class Account(ABC):
         self.__password=password
         self.__status=status
         self.__person=person
+    def get_id(self):
+        return self.__id
 
     def reset_password(self,new_password):
         self.__password=new_password
@@ -42,7 +44,7 @@ class Member(Account):
         if self.__total_books_checked_out>=5:
             print("Cannot check out")
             return False
-        if book_item.status!=BookStatus.AVAILABLE:
+        if book_item.get_status()!=BookStatus.AVAILABLE:
             print("Book not available")
             return False
         print(f"Book '{book_item} has been checkout")
@@ -54,15 +56,15 @@ class Member(Account):
         self.__total_books_checked_out-=1
         return True
     def check_for_fine(self, book_item):
-        lending = BookLending.lending_records.get(book_item.barcode)
+        lending = BookLending.lending_records.get(book_item.get_barcode())
         if not lending:
             print("No Lending record found")
             return
         due_date = lending.due_date
         today = datetime.today()
-        if today.date() > due_date.date():
-            delay = (today.date() - due_date.date()).days
-            Fine.collect_fine(self.__id, delay)
+        if today.date() > due_date:
+            delay = (today.date() - due_date).days
+            Fine.collect_fine(self.get_id(), delay)
 
 
 
